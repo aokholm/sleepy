@@ -1,0 +1,27 @@
+{
+  "name": "kitesim",
+  "version": "1.0.0",
+  "description": "a realtime dynamic numerical model model of a tether and fixed wing kite",
+  "main": "gulp",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andreas Okholm",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@types/three": "^0.84.14",
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-typescript": "^3.1.7",
+    "gulp-util": "^3.0.8",
+    "install": "^0.10.1",
+    "npm": "^5.0.4",
+    "three": "^0.86.0",
+    "three-orbit-controls": "^82.1.0",
+    "tsify": "^3.0.1",
+    "typescript": "^2.4.1",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
+  }
+}
