@@ -134,6 +134,8 @@ function render(ms) {
     requestAnimationFrame(render)
     renderer.render( scene, camera )
 }
+var rotationRateMoon = 2*Math.PI / ( 20 * 60 )  // rad / sek
+var rotationRateSun = 2*Math.PI / (2 * 60 )  // rad / sek
 
 // Main update loop which is run on every frame 
 function update(dt) {
@@ -143,12 +145,11 @@ function update(dt) {
     dt = Math.min(dt, 0.03) // max timestep of 0.03 seconds
 
     if(moon) {
-        var rotationRate = 0.1 // rad / sek
-        moon.rotateY(rotationRate * dt)
+        moon.rotateY(rotationRateMoon * dt)
     }
 
     if (light) {
-        lightPhase += 0.2 * dt
+        lightPhase += rotationRateSun * dt
         var x = Math.cos(lightPhase)
         var z = Math.sin(lightPhase)
         
